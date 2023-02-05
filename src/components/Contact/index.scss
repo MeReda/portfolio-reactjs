@@ -1,0 +1,85 @@
+.contact-form {
+  width: 100%;
+  margin-top: 20px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      opacity: 0;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+      clear: both;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    font-family: sans-serif;
+    width: 100%;
+    border: 0;
+    background-color: #115173;
+    color: #fff;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    font-family: sans-serif;
+    width: 100%;
+    border: 0;
+    background-color: #115173;
+    color: #fff;
+    height: 50px;
+    font-size: 16px;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+    outline: transparent;
+  }
+
+  .flat-button {
+    color: #ffd700;
+    background: 0 0;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    font-family: sans-serif;
+    border: 1px solid #ffd700;
+    border-radius: 4px;
+    transition: 0.5s;
+
+    &:hover {
+      color: #115173;
+      background-color: #ffd700;
+    }
+  }
+}
+
+.contact-img {
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+}
