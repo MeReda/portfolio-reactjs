@@ -60,20 +60,28 @@
   }
 
   .flat-button {
-    color: #ffd700;
-    background: 0 0;
-    font-size: 1.2rem;
-    letter-spacing: 3px;
+    color: var(--primary-color);
+    background: var(--dark-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
     text-decoration: none;
-    padding: 8px 10px;
-    font-family: sans-serif;
-    border: 1px solid #ffd700;
-    border-radius: 4px;
+    padding: 1.3rem 2.3rem;
+    border: 1px solid;
+    border-image: linear-gradient(
+        90deg,
+        rgba(19, 253, 224, 1) 0%,
+        rgba(54, 123, 243, 1) 100%
+      )
+      10;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
     transition: 0.5s;
+    white-space: nowrap;
 
     &:hover {
-      color: #115173;
-      background-color: #ffd700;
+      color: var(--dark-color);
+      background: var(--gradient);
     }
   }
 }

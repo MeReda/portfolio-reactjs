@@ -14,14 +14,16 @@
   font-weight: 600;
   letter-spacing: 0.0625em;
   font-size: 1.3em;
+  opacity: 0;
+  animation: fadeIn 1s 1s;
+  animation-fill-mode: forwards;
 }
 
-/* Change color of each text in sphere on hover   */
 .tagcloud--item {
-  color: #00ffffff;
+  color: var(--primary-color);
   text-transform: uppercase;
 }
 
 .tagcloud--item:hover {
-  color: #ff6347;
+  color: #367bf3;
 }

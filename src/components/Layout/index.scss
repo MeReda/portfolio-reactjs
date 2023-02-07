@@ -10,12 +10,13 @@
 }
 
 .tags {
-  color: #ffd700;
+  color: var(--primary-color);
   opacity: 0.6;
   position: absolute;
   bottom: 0;
   left: 120px;
   font-size: 18px;
+  animation: fadeIn 1s 0.7s backwards;
   font-family: 'La Belle Aurore';
 }
 
@@ -36,7 +37,18 @@
     h1 {
       font-size: 53px;
       font-family: 'Coolvetica';
-      color: #ffd700;
+      background: linear-gradient(
+        90deg,
+        rgba(19, 253, 224, 1) 0%,
+        rgba(54, 123, 243, 1) 100%
+      );
+      color: transparent;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
       font-weight: 400;
       margin-top: 0;
       position: relative;
@@ -45,6 +57,7 @@
 
       &::before {
         content: '<h1>';
+        color: var(--primary-color);
         font-family: 'La Belle Aurore';
         font-size: 18px;
         position: absolute;
@@ -56,6 +69,7 @@
 
       &::after {
         content: '</h1>';
+        color: var(--primary-color);
         font-family: 'La Belle Aurore';
         font-size: 18px;
         position: absolute;
@@ -67,7 +81,7 @@
     }
 
     p {
-      font-size: 13px;
+      font-size: 1.55rem;
       color: #fff;
       font-family: sans-serif;
       font-weight: 300;
@@ -90,7 +104,7 @@
 
   .text-animate-hover {
     &:hover {
-      color: #fff;
+      color: var(--primary-color);
     }
   }
 }

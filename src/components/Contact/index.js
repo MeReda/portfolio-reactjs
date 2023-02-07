@@ -65,67 +65,72 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container contact-page d-flex align-items-center h-100 w-100 p-5">
-        <div className="row gap-5 m-5 p-5 justify-content-center">
-          <div className="text-zone col-md-6 me-5 pe-5">
-            <h1>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
-                idx={15}
-              />
-            </h1>
-            <p>
-              If you're interested in working together, or just want to say hi,
-              feel free to send me a message. <br />
-              Looking forward to connecting with you.
-            </p>
-            <div className="contact-form">
-              <form ref={refForm} onSubmit={sendEmail}>
-                <ul>
-                  <li className="half">
-                    <input
-                      type="text"
-                      name="user_name"
-                      placeholder="Name"
-                      required
-                    />
-                  </li>
-                  <li className="half">
-                    <input
-                      type="email"
-                      name="user_email"
-                      placeholder="Email"
-                      required
-                    />
-                  </li>
-                  <li>
-                    <input
-                      type="text"
-                      name="subject"
-                      placeholder="Subject"
-                      required
-                    />
-                  </li>
-                  <li>
-                    <textarea
-                      placeholder="Message"
-                      name="message"
-                      required
-                    ></textarea>
-                  </li>
-                  <li>
-                    <input
-                      type="submit"
-                      className="flat-button btn btn-primary"
-                      value="SEND"
-                    />
-                  </li>
-                </ul>
-              </form>
+      <div className="container contact-page h-100">
+        <div className="text-zone w-100 h-100 d-flex align-items-center">
+          <div className="row gap-5 align-items-center justify-content-between">
+            <div className="col-md-6 me-5">
+              <h1>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
+                  idx={15}
+                />
+              </h1>
+              <p>
+                If you're interested in working together, or just want to say
+                hi, feel free to send me a message. <br />
+                Looking forward to connecting with you.
+              </p>
+              <div className="contact-form">
+                <form ref={refForm} onSubmit={sendEmail}>
+                  <ul>
+                    <li className="half">
+                      <input
+                        type="text"
+                        name="user_name"
+                        placeholder="Name"
+                        required
+                      />
+                    </li>
+                    <li className="half">
+                      <input
+                        type="email"
+                        name="user_email"
+                        placeholder="Email"
+                        required
+                      />
+                    </li>
+                    <li>
+                      <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        required
+                      />
+                    </li>
+                    <li>
+                      <textarea
+                        placeholder="Message"
+                        name="message"
+                        required
+                      ></textarea>
+                    </li>
+                    <li>
+                      <input
+                        type="submit"
+                        className="flat-button btn btn-primary"
+                        value="SEND"
+                      />
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+
+            <div className="col-md-4 me-5">
+              <div className="contact-img"></div>
             </div>
           </div>
-          <div className="contact-img col-md-5 ms-5"></div>
         </div>
       </div>
       <Loader type="pacman" />

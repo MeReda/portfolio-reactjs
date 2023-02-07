@@ -15,12 +15,8 @@
     img {
       display: block;
       margin: 8px auto;
-      width: 24px;
+      width: 30px;
       height: auto;
-
-      &.sub-logo {
-        width: 50px;
-      }
     }
   }
 
@@ -121,8 +117,12 @@
         font-size: 15px;
         line-height: 16px;
 
+        svg {
+          transition: 0.3s;
+        }
+
         &:hover svg {
-          color: #ffd700;
+          color: var(--primary-color);
         }
       }
     }
