@@ -24,35 +24,27 @@ const About = () => {
             <h1>
               <AnimatedLetters
                 letterClass={letterClass}
-                strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']}
                 idx={15}
               />
             </h1>
             <p>
-              Hello, I'm a full-stack developer eager to bring my passion and
-              creativity to your projects. I am proficient in Laravel and
-              ReactJS and have a strong desire to create user-friendly, visually
-              appealing websites that deliver an exceptional user experience.
+              I'm a full-stack developer with a passion for creating
+              user-friendly, visually appealing websites using Laravel and
+              ReactJS.
             </p>
             <p>
-              I have strong communication and collaboration skills, which allow
-              me to work effectively with clients and team members. I am a fast
-              learner and have the drive to continuously improve my skills. I
-              understand the importance of meeting deadlines and delivering
-              high-quality work.
+              I have strong communication and collaboration skills, am a quick
+              learner, and value meeting deadlines and delivering quality work.
             </p>
             <p>
-              I believe in the power of teamwork and always strive to contribute
-              to a positive and productive work environment. I am committed to
-              understanding the unique needs and goals of each project, and I am
-              confident that my drive, passion, and creativity will bring value
-              to your team. I am eager to continue growing as a developer and am
-              dedicated to providing exceptional results on every project I work
-              on.
+              I believe in teamwork and am dedicated to understanding each
+              project's goals, bringing value to your team, and delivering
+              exceptional results.
             </p>
           </div>
 
-          <div className="stage-cube-cont col-md-6"></div>
+          <div className="col-md-6"></div>
         </div>
       </div>
       <Loader type="pacman" />

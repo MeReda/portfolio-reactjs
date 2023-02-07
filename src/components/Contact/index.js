@@ -65,13 +65,13 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container contact-page d-flex align-items-center justify-content-center h-100 w-100">
-        <div className="row gap-5">
+      <div className="container contact-page d-flex align-items-center h-100 w-100 p-5">
+        <div className="row gap-5 m-5 p-5 justify-content-center">
           <div className="text-zone col-md-6 me-5 pe-5">
             <h1>
               <AnimatedLetters
                 letterClass={letterClass}
-                strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+                strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
                 idx={15}
               />
             </h1>

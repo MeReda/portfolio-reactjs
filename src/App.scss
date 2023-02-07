@@ -1,4 +1,14 @@
-$primary-color: #ffd700;
+$primary-color: rgba(19, 253, 224, 1);
+
+:root {
+  --primary-color: rgba(19, 253, 224, 1);
+  --dark-color: #0d2645;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(19, 253, 224, 1) 0%,
+    rgba(54, 123, 243, 1) 100%
+  );
+}
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';

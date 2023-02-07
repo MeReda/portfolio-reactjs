@@ -48,7 +48,7 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: var(--primary-color);
 
         svg {
           opacity: 0;
@@ -99,7 +99,7 @@
 
     a.active {
       svg {
-        color: #ffd700;
+        color: var(--primary-color);
       }
     }
   }
