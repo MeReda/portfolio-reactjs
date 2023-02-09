@@ -2,7 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import TagCloud from 'TagCloud'
+import AnimationSkills from './AnimationSkills'
 
 const Skills = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -14,45 +14,6 @@ const Skills = () => {
 
     return () => {
       clearTimeout(timeoutId)
-    }
-  }, [])
-
-  // Animation settings for Skills Cloud
-  useEffect(() => {
-    return () => {
-      const container = '.tagcloud'
-      const texts = [
-        'CSS3',
-        'JavaScript',
-        'Es6',
-        'Bootstrap3',
-        'JQuery',
-        'Sass',
-        'ReactJs',
-        'Git',
-        'Github',
-        'Php',
-        'MySQL',
-        'Laravel',
-        'Linux',
-        'Touch Typing',
-        'python',
-        'tkinter',
-        'MongoDB',
-      ]
-
-      const options = {
-        radius: 300,
-        maxSpeed: 'normal',
-        initSpeed: 'normal',
-        keep: true,
-      }
-
-      TagCloud(
-        container,
-        texts.map((text) => text.toString()),
-        options
-      )
     }
   }, [])
 
@@ -91,7 +52,7 @@ const Skills = () => {
 
             <div className="col-md-4">
               <div className="text-shpere">
-                <span className="tagcloud"></span>
+                <AnimationSkills />
               </div>
             </div>
           </div>
