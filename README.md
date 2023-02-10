@@ -8,25 +8,25 @@ To get started with this repo, you'll need to have [Node.js](https://nodejs.org/
 
 1. Clone the repository to your local machine:
 
-```bash
+```sh
    git clone https://github.com/MeReda/portfolio-reactjs.git
 ```
 
 2. Navigate to the project directory:
 
-```bash
+```sh
    cd my-portfolio
 ```
 
 3. Install the necessary packages:
 
-```bash
+```sh
    npm install
 ```
 
 4. Start the project:
 
-```bash
+```sh
    npm start
 ```
 
