@@ -2,7 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import AnimationSkills from './AnimationSkills'
+import IconsSkills from './IconsSkills'
 
 const Skills = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -51,9 +51,7 @@ const Skills = () => {
             </div>
 
             <div className="col-md-4">
-              <div className="text-shpere">
-                <AnimationSkills />
-              </div>
+              <IconsSkills />
             </div>
           </div>
         </div>
