@@ -7,7 +7,7 @@ Welcome to my portfolio repository! This project is designed to showcase my skil
 To get started with this repo, you'll need to have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm) installed on your machine.
 
 1. Clone the repository to your local machine:
-   git clone https://github.com/<your-username>/my-portfolio.git
+   git clone https://github.com/MeReda/portfolio-reactjs.git
 
 2. Navigate to the project directory:
    cd my-portfolio
