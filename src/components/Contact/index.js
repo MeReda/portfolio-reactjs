@@ -5,6 +5,8 @@ import emailjs from '@emailjs/browser'
 import ContactAnimation from '../../assets/images/contact-animation.json'
 import Lottie from 'lottie-web'
 import './index.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -20,29 +22,28 @@ const Contact = () => {
     }
   }, [])
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault()
 
-    console.log('Form data:', refForm.current) // Debuging
-
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         'service_zz59qhc',
         'template_ntqbc7b',
         refForm.current,
         'g-c31pXbX-Qd1x3rM'
       )
-      .then(
-        (response) => {
-          console.log('Form submitted successfully', response) // Debuging
-          alert('Message successfully sent !')
-          window.location.reload(false)
-        },
-        (error) => {
-          console.error('Form submission failed', error) // Debuging
-          alert('Failed to send the message, please try again')
-        }
+
+      alert('Message sent successfuly')
+      // Empty all fields
+      const inputs = refForm.current.querySelectorAll(
+        'input[type=text], input[type=email], textarea'
       )
+
+      inputs.forEach((input) => (input.value = ''))
+    } catch (error) {
+      console.error(error)
+      alert('There was an error please try again')
+    }
   }
 
   // Start Animation Script
@@ -116,11 +117,10 @@ const Contact = () => {
                       ></textarea>
                     </li>
                     <li>
-                      <input
-                        type="submit"
-                        className="flat-button btn btn-primary"
-                        value="SEND"
-                      />
+                      <button className="flat-button btn btn-primary">
+                        <FontAwesomeIcon icon={faPaperPlane} />
+                        <input type="submit" value="SEND" />
+                      </button>
                     </li>
                   </ul>
                 </form>
