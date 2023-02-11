@@ -12,5 +12,11 @@
 
   .skills-icon {
     font-size: 5rem;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primary-color);
+    }
   }
 }
