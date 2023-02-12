@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my portfolio repository! This project is designed to showcase my skills and projects, and provide an easy way to view my work.
+Welcome to my portfolio repository!! This project is designed to showcase my skills and projects, and provide an easy way to view my work.
 
 ## Getting Started
 
