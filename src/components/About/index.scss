@@ -1,0 +1,40 @@
+.flat-button {
+  color: var(--primary-color);
+  background: var(--dark-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-decoration: none;
+  padding: 1.3rem 2.3rem;
+  border: 1px solid;
+  border-image: linear-gradient(
+      90deg,
+      rgba(19, 253, 224, 1) 0%,
+      rgba(54, 123, 243, 1) 100%
+    )
+    10;
+  float: left;
+  animation: fadeIn 1s 1.8s backwards;
+  transition: 0.5s;
+  white-space: nowrap;
+
+  svg {
+    font-size: 2rem;
+  }
+
+  input[type='submit'] {
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: 0.5s;
+    padding-left: 1rem;
+  }
+
+  &:hover {
+    color: var(--dark-color);
+    background: var(--gradient);
+    input[type='submit'] {
+      color: var(--dark-color);
+    }
+  }
+}

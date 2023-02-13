@@ -9,20 +9,6 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = [
     ' ',
-    'M',
-    'o',
-    'h',
-    'a',
-    'm',
-    'm',
-    'e',
-    'd',
-    ' ',
-    'R',
-    'e',
-    'd',
-    'a',
-    ' ',
     'B',
     'E',
     'N',
@@ -33,6 +19,15 @@ const Home = () => {
     'O',
     'U',
     'N',
+    ' ',
+    'M',
+    'e',
+    'd',
+    ' ',
+    'R',
+    'e',
+    'd',
+    'a',
   ]
   const jobArray = [
     'w',
@@ -65,8 +60,8 @@ const Home = () => {
     <>
       <div className="container home-page">
         <div className="text-zone w-100 h-100 d-flex align-items-center">
-          <div className="row gap-5 align-items-center justify-content-between">
-            <div className="col-md-7 me-5">
+          <div className="row gap-5 align-items-center">
+            <div className="col-md-4 w-50 me-5">
               <h1>
                 <span className={letterClass}>H</span>
                 <span className={`${letterClass} _12`}>i,</span>
@@ -91,7 +86,7 @@ const Home = () => {
               </Link>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-md-2 ms-5">
               <Logo />
             </div>
           </div>

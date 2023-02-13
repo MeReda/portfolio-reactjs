@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import ContactAnimation from '../../assets/images/about-animation.json'
 import Lottie from 'lottie-web'
 import Loader from 'react-loaders'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -18,7 +20,7 @@ const About = () => {
     }
   }, [])
 
-  // Start Animation Script
+  // Animation Script
 
   useEffect(() => {
     const animation = Lottie.loadAnimation({
@@ -34,14 +36,24 @@ const About = () => {
     }
   }, [])
 
-  // End Animation Script
+  // Download CV
+
+  const [fileName, setFileName] = useState('cv.pdf')
+  const [url, setUrl] = useState('/cv.pdf')
+
+  const handleDownload = () => {
+    const link = document.createElement('a')
+    link.href = url
+    link.download = fileName
+    link.click()
+  }
 
   return (
     <>
       <div className="container about-page d-flex align-items-center justify-content-center h-100 w-100">
         <div className="text-zone w-100 h-100 d-flex align-items-center">
           <div className="row gap-5 align-items-center justify-content-between">
-            <div className="col-md-6 me-5">
+            <div className="col-md-5 ms-5">
               <h1>
                 <AnimatedLetters
                   letterClass={letterClass}
@@ -64,6 +76,10 @@ const About = () => {
                 project's goals, bringing value to your team, and delivering
                 exceptional results.
               </p>
+              <button className="flat-button mt-5" onClick={handleDownload}>
+                <FontAwesomeIcon icon={faDownload} />
+                <input type="submit" value="Curriculum Vitae" />
+              </button>
             </div>
             <div className="col-md-4">
               <div className="about-img"></div>
@@ -71,7 +87,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
+      {/* <Loader type="pacman" /> */}
+      <Loader type="bars" color="#686769" />
     </>
   )
 }

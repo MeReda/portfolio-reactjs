@@ -9,17 +9,17 @@
   animation: fadeIn 1s 1.5s forwards;
 
   svg {
-    width: 100%;
+    width: 70%;
     height: auto;
     bottom: 0;
   }
 
   .solid-logo {
-    width: 100%;
+    width: 70%;
     z-index: 1;
     position: absolute;
-    width: 600px;
-    top: 0;
+    top: 50%;
+    translate: 0 -50%;
     opacity: 0;
     animation: fill 3s ease forwards 3s;
   }

@@ -68,8 +68,8 @@ const Contact = () => {
     <>
       <div className="container contact-page h-100">
         <div className="text-zone w-100 h-100 d-flex align-items-center">
-          <div className="row gap-5 align-items-center justify-content-between">
-            <div className="col-md-6 me-5">
+          <div className="row gap-5 align-items-center justify-content-between pt-5 mt-5">
+            <div className="col-md-5 ms-5">
               <h1>
                 <AnimatedLetters
                   letterClass={letterClass}
