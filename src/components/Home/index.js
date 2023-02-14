@@ -86,7 +86,7 @@ const Home = () => {
               </Link>
             </div>
 
-            <div className="col-md-2 ms-5">
+            <div className="col-md-2 ms-auto me-auto">
               <Logo />
             </div>
           </div>

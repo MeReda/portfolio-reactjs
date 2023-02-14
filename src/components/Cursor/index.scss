@@ -1,0 +1,12 @@
+#cursor {
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--primary-color);
+  box-sizing: border-box;
+  border-radius: 100vmax;
+  pointer-events: none;
+  transition: 'transform 0.2s linear';
+  transform: 'translate(-50%, -50%)';
+}

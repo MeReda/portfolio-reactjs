@@ -87,8 +87,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* <Loader type="pacman" /> */}
-      <Loader type="bars" color="#686769" />
+      <Loader type="pacman" />
     </>
   )
 }
