@@ -1,8 +1,5 @@
 # My Portfolio
 
-Welcome to my portfolio repository!! This project is designed to showcase my skills and projects, and provide an easy way to view my work.
-link: https://med-reda-ben.netlify.app/
-
 ## Getting Started
 
 To get started with this repo, you'll need to have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm) installed on your machine.
