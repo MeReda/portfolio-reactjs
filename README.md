@@ -13,7 +13,7 @@ To get started with this repo, you'll need to have [Node.js](https://nodejs.org/
 2. Navigate to the project directory:
 
 ```sh
-   cd my-portfolio
+   cd portfolio-reactjs
 ```
 
 3. Install the necessary packages:
